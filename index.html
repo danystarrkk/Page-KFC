@@ -4,52 +4,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LandPage</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/app.css">
+  <title>Page-KFC</title>
+  <link rel="stylesheet" href="dist/css/app.css">
 </head>
 
-<body>
+<body class="background">
 
-  <header class="header container">
+  <header class="header cont">
 
-    <img class="header__img" src="img/logo.png" alt="logo">
+    <picture class="header-picture">
+      <source srcset="dist/img/logo.avif" type="image/avif" />
+      <source srcset="dist/img/logo.webp" type="image/webp" />
+      <img src="dist/img/logo.png" alt="logo" loading="lazy" width="100" height="100">
+    </picture>
 
-    <nav class="nav">
-      <a class="nav__link" href="#">Home</a>
-      <a class="nav__link" href="#">Menu</a>
-      <a class="nav__link" href="#">About</a>
-      <a class="nav__link" href="#">Contact</a>
+    <nav class="header-nav">
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
     </nav>
-  </header>
 
-  <main class="main container">
-
-    <div class="info">
-      <h1 class="title">Its Finger <br> Lickin <span class="title__span">Good.</span></h1>
-      <p class="info__txt">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quidem repudiandae nisi provident dolorum
-        obcaecati pariatur quo beatae, illum porro expedita ea saepe assumenda nobis quos non enim aliquid amet!
-      </p>
-      <a class="info__btn" href="#">Order Now</a>
-
+    <div class="header-toggle">
+      <div></div>
     </div>
 
-    <img class="main__img" src="img/burger_fries.png" alt="burger_fries">
+  </header>
+
+  <main class="main cont">
+    <div class="main-content">
+      <h2>Its Finger <br> Lickin <span>Good.</span></h2>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem facilis animi doloremque tempora laboriosam
+        cupiditate voluptates minima ex totam, autem, temporibus nisi consectetur, perferendis soluta alias error ipsum
+        officia possimus?</p>
+
+      <a href="#" class="btn">Order Now</a>
+    </div>
+
+    <div class="main-image">
+      <picture>
+        <source srcset="dist/img/burger.avif" type="image/avif">
+        <source srcset="dist/img/burger.webp" type="image/webp">
+        <img src="dist/img/burger.png" alt="burger" width="300" height="300" loading="lazy">
+      </picture>
+    </div>
 
   </main>
 
-  <footer class="footer container">
+  <footer class="footer cont">
 
-    <ion-icon name="logo-facebook"></ion-icon>
-    <ion-icon name="logo-twitter"></ion-icon>
-    <ion-icon name="logo-instagram"></ion-icon>
+    <nav class="footer-nav">
+      <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+    </nav>
 
   </footer>
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+  <script src="dist/js/app.js"></script>
 </body>
 
 </html>

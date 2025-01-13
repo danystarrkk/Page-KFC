@@ -1,0 +1,1 @@
+const toggle=document.querySelector(".header-toggle"),header=document.querySelector(".header");toggle.onclick=()=>{header.classList.toggle("active")};

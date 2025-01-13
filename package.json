@@ -1,0 +1,20 @@
+{
+  "name": "page-kfc",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Daniel Estrella",
+  "type": "module",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "devDependencies": {
+    "glob": "^11.0.1",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^6.0.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.83.1",
+    "sharp": "^0.33.5"
+  }
+}
